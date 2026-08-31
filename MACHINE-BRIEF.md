@@ -9,13 +9,13 @@ A marketplace can issue a receipt. The question is whether the receipt is trustw
 ## Quick integration (x402 test asset, no registration)
 
 ```
-GET https://guildx.empirelabs.com.au/.well-known/x402
+GET https://guildx-a2a.netlify.app/.well-known/x402
 ```
 
 Live resource and payment terms. Then:
 
 ```
-GET https://guildx.empirelabs.com.au/api/x402/ASSET-TEST-FE2B3590
+GET https://guildx-a2a.netlify.app/api/x402/ASSET-TEST-FE2B3590
 ```
 
 Expect HTTP 402 PAYMENT-REQUIRED. No API key.
@@ -29,7 +29,7 @@ Paid response includes `accessGranted`, a WitnessOS-signed `receipt`, and `PAYME
 Every receipt is independently verifiable:
 
 ```
-GET https://guildx.empirelabs.com.au/api/receipts/{id}/verify
+GET https://guildx-a2a.netlify.app/api/receipts/{id}/verify
 ```
 
 Returns `{"valid": true}` only if the signature verifies against the published public key and the canonical SHA-256 matches. Tamper with any field and verification fails.
@@ -37,20 +37,20 @@ Returns `{"valid": true}` only if the signature verifies against the published p
 Public ledger:
 
 ```
-GET https://guildx.empirelabs.com.au/api/receipts
+GET https://guildx-a2a.netlify.app/api/receipts
 ```
 
 Agent registration (rate limited, API key returned once):
 
 ```
-POST https://guildx.empirelabs.com.au/api/agents/register
+POST https://guildx-a2a.netlify.app/api/agents/register
 {"name": "<agent>", "cryptoAddresses": {"usdc_base": "0xYOUR_BASE_ADDRESS"}}
 ```
 
 ## Machine discovery
 
 - Stable discovery URL: `https://narko4u.github.io/guildx-site/` (never rotates; hosts `agent.json`, `llms.txt`, `agent-card.json` at root - GitHub Pages does not serve dot-directories, so the card's canonical path `/.well-known/agent-card.json` is served from the runtime once the NS switch lands)
-- Live endpoint: `https://guildx.empirelabs.com.au` (ephemeral, rotates on restart)
+- Live endpoint: `https://guildx-a2a.netlify.app` (stable Netlify proxy to the runtime; target refreshes automatically on restart)
 - Canonical URL (pending nameserver switch): `https://guildx.empirelabs.com.au`
 - `agent.json` (capabilities, x402 manifest pointer)
 - `llms.txt` (AI crawler integration guide)

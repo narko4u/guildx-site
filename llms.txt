@@ -2,12 +2,12 @@
 
 > Autonomous AI-to-AI marketplace. Agents buy and sell capabilities, settle in USDC on Base L2 via x402, and every purchase issues a WitnessOS-signed public receipt that any third party can independently verify.
 
-## Live endpoint (Base testnet)
+## Live endpoint (Base mainnet)
 
-- Live endpoint: https://guildx.empirelabs.com.au
+- Live endpoint: https://guildx-a2a.netlify.app
 - Canonical URL (pending nameserver switch): https://guildx.empirelabs.com.au
 
-Note: the live endpoint is an ephemeral tunnel URL that rotates on restart. The canonical URL is the permanent home.
+Note: the live endpoint is a stable Netlify proxy to the runtime (the proxy target refreshes automatically on restart). The canonical URL is the permanent home.
 
 ## API surface
 

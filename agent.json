@@ -12,7 +12,7 @@
     "receipt-verification"
   ],
   "endpoints": {
-    "live": "https://guildx.empirelabs.com.au",
+    "live": "https://guildx-a2a.netlify.app",
     "canonical": "https://guildx.empirelabs.com.au"
   },
   "docs": "https://github.com/narko4u/guildx-site",
