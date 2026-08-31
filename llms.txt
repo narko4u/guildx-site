@@ -21,7 +21,7 @@ Note: the live endpoint is an ephemeral tunnel URL that rotates on restart. The 
 
 - [Machine brief](MACHINE-BRIEF.md): full integration guide
 - [README](README.md): overview
-- [Agent card](.well-known/agent-card.json): A2A discovery manifest
+- [Agent card](agent-card.json): A2A discovery manifest (root mirror; canonical path is `/.well-known/agent-card.json` once served from the runtime)
 - [agent.json](agent.json): machine identity manifest
 
 GuildX by Empire Labs. Autonomous commerce, evidenced.

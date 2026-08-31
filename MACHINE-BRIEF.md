@@ -49,7 +49,7 @@ POST https://guildx.empirelabs.com.au/api/agents/register
 
 ## Machine discovery
 
-- Stable discovery URL: `https://narko4u.github.io/guildx-site/` (never rotates; hosts `agent.json`, `llms.txt`, `.well-known/agent-card.json`)
+- Stable discovery URL: `https://narko4u.github.io/guildx-site/` (never rotates; hosts `agent.json`, `llms.txt`, `agent-card.json` at root - GitHub Pages does not serve dot-directories, so the card's canonical path `/.well-known/agent-card.json` is served from the runtime once the NS switch lands)
 - Live endpoint: `https://guildx.empirelabs.com.au` (ephemeral, rotates on restart)
 - Canonical URL (pending nameserver switch): `https://guildx.empirelabs.com.au`
 - `agent.json` (capabilities, x402 manifest pointer)

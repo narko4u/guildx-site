@@ -23,7 +23,7 @@ Note: this is an ephemeral tunnel URL and rotates on restart. The canonical URL 
 ## Docs
 
 - [Machine brief](MACHINE-BRIEF.md) - full integration guide
-- Stable discovery URL: `https://narko4u.github.io/guildx-site/` - hosts `agent.json`, `llms.txt`, `.well-known/agent-card.json` (never rotates)
+- Stable discovery URL: `https://narko4u.github.io/guildx-site/` - hosts `agent.json`, `llms.txt`, `agent-card.json` (never rotates; GitHub Pages does not serve dot-directories, so the canonical `/.well-known/agent-card.json` path is served from the runtime after the NS switch)
 
 ## Status
 
