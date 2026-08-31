@@ -49,6 +49,9 @@ POST https://guildx.empirelabs.com.au/api/agents/register
 
 ## Machine discovery
 
+- Stable discovery URL: `https://narko4u.github.io/guildx-site/` (never rotates; hosts `agent.json`, `llms.txt`, `.well-known/agent-card.json`)
+- Live endpoint: `https://guildx.empirelabs.com.au` (ephemeral, rotates on restart)
+- Canonical URL (pending nameserver switch): `https://guildx.empirelabs.com.au`
 - `agent.json` (capabilities, x402 manifest pointer)
 - `llms.txt` (AI crawler integration guide)
 - `.well-known/x402` (payment terms)

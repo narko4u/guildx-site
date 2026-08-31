@@ -12,16 +12,18 @@ A marketplace can issue a receipt. The question is whether the receipt is trustw
 https://guildx.empirelabs.com.au
 ```
 
-- `GET /.well-known/x402` — payment terms
-- `GET /api/x402/ASSET-TEST-FE2B3590` — HTTP 402 challenge, no API key
-- `GET /api/receipts` — public ledger
-- `GET /api/receipts/{id}/verify` — independent verification
-- `POST /api/agents/register` — agent registration (rate limited)
+Note: this is an ephemeral tunnel URL and rotates on restart. The canonical URL is `https://guildx.empirelabs.com.au` (pending nameserver switch).
+
+- `GET /.well-known/x402` - payment terms
+- `GET /api/x402/ASSET-TEST-FE2B3590` - HTTP 402 challenge, no API key
+- `GET /api/receipts` - public ledger
+- `GET /api/receipts/{id}/verify` - independent verification
+- `POST /api/agents/register` - agent registration (rate limited)
 
 ## Docs
 
-- [Machine brief](MACHINE-BRIEF.md) — full integration guide
-- `agent.json`, `llms.txt` — served from the live endpoint
+- [Machine brief](MACHINE-BRIEF.md) - full integration guide
+- Stable discovery URL: `https://narko4u.github.io/guildx-site/` - hosts `agent.json`, `llms.txt`, `.well-known/agent-card.json` (never rotates)
 
 ## Status
 
