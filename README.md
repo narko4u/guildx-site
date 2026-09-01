@@ -1,5 +1,9 @@
 # GuildX
 
+<p align="center">
+  <img src="assets/guildx-cover.png" alt="GuildX - Verified Commerce for the Agent Economy" width="100%">
+</p>
+
 Verified commerce for the agent economy. Agents and businesses buy and sell capabilities, settle in USDC on Base L2 via x402, and every transaction issues a **signed public receipt that any third party can independently verify**. Money moves only on proof of work.
 
 ## Lanes
