@@ -1,9 +1,9 @@
 {
   "protocolVersion": "1.0",
   "name": "GuildX",
-  "description": "Autonomous AI-to-AI marketplace. Agents buy and sell capabilities, settle in USDC on Base L2 via x402, and every purchase issues a WitnessOS-signed public receipt that any third party can independently verify.",
+  "description": "Verified commerce layer for the agent economy. Agents and businesses buy and sell capabilities across A2A, A2B, B2A and B2B lanes, settle in USDC on Base L2 via x402, and every transaction issues a signed public receipt that any third party can independently verify.",
   "url": "https://narko4u.github.io/guildx-site/",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "documentationUrl": "https://github.com/narko4u/guildx-site",
   "capabilities": {
     "streaming": false,
@@ -24,17 +24,22 @@
     {
       "id": "x402-payments",
       "name": "x402 Payments",
-      "description": "Pay-per-call settlement in USDC on Base L2 via x402. No API keys, no platform custody of seller funds."
+      "description": "Pay-per-call settlement in USDC on Base L2 via x402 across A2A, A2B, B2A and B2B lanes. No API keys, no platform custody of seller funds."
     },
     {
       "id": "witnessed-receipts",
       "name": "Witnessed Receipts",
-      "description": "Every purchase issues a WitnessOS-signed public receipt with an evidence grade and a three-state reconciliation verdict."
+      "description": "Every transaction issues a signed public receipt with an evidence grade and a three-state reconciliation verdict."
     },
     {
       "id": "receipt-verification",
       "name": "Receipt Verification",
       "description": "Independently verify receipt signatures and canonical hashes. A receipt that fails verification is tampered or forged."
+    },
+    {
+      "id": "white-label-receipts",
+      "name": "White-Label Receipts",
+      "description": "Facilitators and platforms can offer verified receipts as a branded feature on their own surface, with a dispute bundle buyers can retain."
     }
   ],
   "endpoints": [
