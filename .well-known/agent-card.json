@@ -39,9 +39,9 @@
   ],
   "endpoints": [
     {
-      "path": "https://guildx.empirelabs.com.au",
+      "path": "https://guildx-a2a.netlify.app",
       "method": "POST",
-      "description": "Live GuildX API surface (Base testnet). Ephemeral tunnel URL, rotates on restart. Canonical URL https://guildx.empirelabs.com.au pending."
+      "description": "Live GuildX API surface (Base mainnet). Stable Netlify proxy to the runtime. Canonical URL https://guildx.empirelabs.com.au pending."
     }
   ]
 }

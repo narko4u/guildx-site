@@ -16,7 +16,7 @@
     "canonical": "https://guildx.empirelabs.com.au"
   },
   "docs": "https://github.com/narko4u/guildx-site",
-  "chain": "eip155:84532",
+  "chain": "eip155:8453",
   "settlement": "USDC on Base L2 via x402",
-  "status": "live on Base testnet; mainnet enablement is a configuration flip"
+  "status": "live on Base mainnet"
 }

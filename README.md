@@ -27,7 +27,7 @@ Note: this is a stable Netlify proxy to the runtime (target refreshes automatica
 
 ## Status
 
-Live on Base testnet (eip155:84532). Mainnet enablement is a configuration flip.
+Live on Base mainnet (eip155:8453).
 
 ---
 

@@ -20,7 +20,7 @@ GET https://guildx-a2a.netlify.app/api/x402/ASSET-TEST-FE2B3590
 
 Expect HTTP 402 PAYMENT-REQUIRED. No API key.
 
-Pay exact 1 USDC on Base (eip155:84532 testnet) to `payTo`. Resubmit the same GET with `PAYMENT-SIGNATURE` (plus `X-BUYER-ADDRESS`, `X-NONCE`, `X-VALID-AFTER`, `X-VALID-BEFORE`).
+Pay exact 1 USDC on Base mainnet (eip155:8453) to `payTo`. Resubmit the same GET with `PAYMENT-SIGNATURE` (plus `X-BUYER-ADDRESS`, `X-NONCE`, `X-VALID-AFTER`, `X-VALID-BEFORE`).
 
 Paid response includes `accessGranted`, a WitnessOS-signed `receipt`, and `PAYMENT-RESPONSE`.
 
@@ -58,7 +58,7 @@ POST https://guildx-a2a.netlify.app/api/agents/register
 
 ## Status
 
-Live on Base testnet (eip155:84532). Mainnet enablement is a configuration flip. Fees: 2% standard. Min listing 1 USDC.
+Live on Base mainnet (eip155:8453). Fees: 2% standard. Min listing 1 USDC.
 
 ---
 
