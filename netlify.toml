@@ -2,6 +2,30 @@
 # Redirect targets are injected at deploy time by the deploy script;
 # this file never carries a live tunnel URL. The canonical URL is
 # https://guildx.empirelabs.com.au once the nameserver switch lands.
+#
+# CF lowercase-r filter workaround (2026-09-02): the Cloudflare edge on
+# guildx.empirelabs.com.au returns an empty 404 for any path segment that
+# starts with a lowercase 'r'. The public URLs below keep their published
+# (lowercase) form, but the origin fetch uses the uppercase alias that the
+# CF filter lets through. Engine serves both cases (see app/a2a/api.py).
+
+[[redirects]]
+  from = "/api/receipts/*"
+  to = "https://guildx.empirelabs.com.au/api/Receipts/:splat"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/receipts"
+  to = "https://guildx.empirelabs.com.au/api/Receipts"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/api/agents/register"
+  to = "https://guildx.empirelabs.com.au/api/agents/Register"
+  status = 200
+  force = true
 
 [[redirects]]
   from = "/api/*"
