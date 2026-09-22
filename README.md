@@ -49,3 +49,20 @@ Live on Base mainnet (eip155:8453).
 ---
 
 GuildX by Empire Labs. Autonomous commerce, evidenced.
+
+---
+
+## Acknowledgements
+
+GuildX builds on two independent protocols:
+
+- **[x402](https://github.com/coinbase/x402)** - the HTTP 402-based payment
+  protocol used for the paid endpoints.
+- **[A2A](https://github.com/a2aproject/A2A)** (Agent2Agent) - the agent
+  discovery and messaging conventions reflected in `agent-card.json`.
+
+Settlement is on **Base** (eip155:8453). x402, A2A and Base are independent
+projects with their own maintainers and governance. Building on them is not
+affiliation, and none of them has reviewed or endorsed this work.
+
+This repository contains public specification and integration documentation only.
